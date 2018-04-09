@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Startup Name Generator',
+      title: 'Movies Today',
       home: new MoviesToday(),
     );
   }
@@ -55,7 +55,7 @@ class MoviesState extends State<MoviesToday> {
         ),
         subtitle: new Image.network(constants.imagePrefix + data[index]["poster_path"],),
       ),
-      new ButtonTheme.bar( // make buttons use the appropriate styles for cards
+      new ButtonTheme.bar(
         child: new ButtonBar(
           children: <Widget>[
             new FlatButton(
@@ -96,5 +96,4 @@ class MoviesState extends State<MoviesToday> {
     );
   }
 ));
-}
-}
+}}
