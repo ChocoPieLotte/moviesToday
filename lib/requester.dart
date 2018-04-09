@@ -11,6 +11,5 @@ Future<List> fetchData() async {
         "Accept": "applciation/json"
       }
     );
-  print("request data");
   return JSON.decode(response.body)["results"];
 }
